@@ -7,7 +7,7 @@ function App() {
     <>
       <div className="Container flex flex-col  items-center mockup-phone mockup-phone-display">
         <div className=" phone mockup-phone-camera "></div>
-        <img className="h-30 w-30 mt-6" src="/headphone.png"/>
+        <img className="h-25 w-25 mt-6" src="/headphone.png"/>
         <div className="mt-2">
           <Music/>
         </div>

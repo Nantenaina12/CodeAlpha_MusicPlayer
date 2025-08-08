@@ -112,9 +112,10 @@ export default function Music() {
       </div>
 
       {/* Boutons */}
-      <div className="controls text-blue-700" style={{ marginTop: "10px" }}>
+      <div className="controls text-black" style={{ marginTop: "10px" }}>
         <button onClick={prevSong}>⏮</button>
-        <button onClick={togglePlay}>{isPlaying ? "⏸" : "▶️"}</button>
+        <button onClick={togglePlay}>{isPlaying ? "⏸" :"▶"
+}</button>
         <button onClick={nextSong}>⏭</button>
       </div>
     </div>

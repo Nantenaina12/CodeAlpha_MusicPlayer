@@ -13,18 +13,22 @@
 
 }
 .controls{
-  font-size: 1.6rem;
+  font-size: 2rem;
   max-width: 100%;
 }
 .phone{
   margin-top: -8px;
 }
 .music-player{
-  font-size: 1.2rem;
+  font-size: 1.3rem;
 }
 button{
   margin: 2px;
   cursor: pointer;
+}
+button:hover{
+  transform: scale(1.5);
+
 }
 h2,p{
   font-size: 1.4rem;
