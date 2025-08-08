@@ -85,18 +85,8 @@ export default function Music() {
 
   return musics.length > 0 ? (
     <div className="music-player" style={{ textAlign: "center" }}>
-      <h2>{musics[currentIndex].title}</h2>
-      <p>{musics[currentIndex].artist}</p>
-
-      {musics[currentIndex].cover && (
-        <img
-          src={musics[currentIndex].cover}
-          alt={musics[currentIndex].title}
-          width="200"
-          style={{ borderRadius: "10px" }}
-        />
-      )}
-
+      <h2 className="text-amber-50">{musics[currentIndex].title}</h2>
+      <p className="text-amber-50">{musics[currentIndex].artist}</p>
       <audio
         ref={audioRef}
         src={musics[currentIndex].url}
@@ -116,13 +106,13 @@ export default function Music() {
       />
 
       {/* Temps écoulé / total */}
-      <div>
+      <div className="text-cyan-50">
         <span>{formatTime(currentTime)}</span> /{" "}
         <span>{formatTime(duration)}</span>
       </div>
 
       {/* Boutons */}
-      <div className="controls" style={{ marginTop: "10px" }}>
+      <div className="controls text-blue-700" style={{ marginTop: "10px" }}>
         <button onClick={prevSong}>⏮</button>
         <button onClick={togglePlay}>{isPlaying ? "⏸" : "▶️"}</button>
         <button onClick={nextSong}>⏭</button>

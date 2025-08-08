@@ -1,2 +1,31 @@
 @import "tailwindcss";
 @plugin "daisyui";
+*{
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+.Container{
+  background-image: url("https://img.daisyui.com/images/stock/453966.webp");
+  max-height: 85vh;
+  max-width: 100%;
+  width: 60%;
+  margin: 40px auto
+
+}
+.controls{
+  font-size: 1.6rem;
+  max-width: 100%;
+}
+.phone{
+  margin-top: -8px;
+}
+.music-player{
+  font-size: 1.2rem;
+}
+button{
+  margin: 2px;
+  cursor: pointer;
+}
+h2,p{
+  font-size: 1.4rem;
+}
