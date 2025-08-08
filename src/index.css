@@ -6,10 +6,10 @@
 }
 .Container{
   background-image: url("https://img.daisyui.com/images/stock/453966.webp");
-  max-height: 85vh;
+  max-height: 90vh;
   max-width: 100%;
   width: 60%;
-  margin: 40px auto
+  margin: 25px auto
 
 }
 .controls{
@@ -33,3 +33,23 @@ button:hover{
 h2,p{
   font-size: 1.4rem;
 }
+@media (max-width:600px){
+  .Container{
+    max-height: 95vh;
+    max-width: 100%;
+    width: 95%;
+    margin: 3px auto;
+    margin-top: 10px;
+
+  }
+  
+}
+@media (min-width: 728px) and (max-width: 1024px) {
+  .container {
+    padding: 1rem;
+    max-height: 50%;
+    max-width: 100%;
+    width: 90%;
+    margin: 2px auto;
+    
+  }}
